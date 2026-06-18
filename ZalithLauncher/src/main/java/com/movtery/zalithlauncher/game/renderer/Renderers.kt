@@ -20,6 +20,7 @@ package com.movtery.zalithlauncher.game.renderer
 
 import android.content.Context
 import com.movtery.zalithlauncher.game.renderer.renderers.FreedrenoRenderer
+import com.movtery.zalithlauncher.game.renderer.renderers.F3LBetaRenderer
 import com.movtery.zalithlauncher.game.renderer.renderers.GL4ESRenderer
 import com.movtery.zalithlauncher.game.renderer.renderers.NGGL4ESRenderer
 import com.movtery.zalithlauncher.game.renderer.renderers.PanfrostRenderer
