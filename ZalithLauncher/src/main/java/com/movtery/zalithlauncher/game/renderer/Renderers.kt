@@ -59,7 +59,8 @@ object Renderers {
             VulkanZinkRenderer,
             VirGLRenderer,
             FreedrenoRenderer,
-            PanfrostRenderer
+            PanfrostRenderer,
+            F3LBetaRenderer
         )
     }
 
