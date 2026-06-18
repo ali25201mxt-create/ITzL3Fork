@@ -95,6 +95,7 @@ open class JvmLauncher(
             getCacioJavaArgs(screenSize, runtime.javaVersion == 8)
         ).apply {
             addAll(args)
+            add("-Xmx2G")
         }
 
         LoggerBridge.appendTitle("Launch JVM")
