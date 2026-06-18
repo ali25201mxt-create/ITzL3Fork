@@ -168,6 +168,23 @@ fun MainScreen(
                 .applyFullscreen(AllSettings.launcherFullScreen.state)
         ) {
             TopBar(
+                  title = {
+        val context = androidx.compose.ui.platform.LocalContext.current
+        val prefs = context.getSharedPreferences("ZalisStats", android.content.Context.MODE_PRIVATE)
+        val hours = prefs.getLong("total_hours", 0L)
+        val version = prefs.getString("fav_version", "1.20.1") ?: "1.20.1"
+
+        androidx.compose.material3.Text(
+            text = "Play Time: ${hours}h  |  Fav: $version",
+            color = androidx.compose.ui.graphics.Color.White
+        )
+    },
+
+androidx.compose.material3.Text(
+    text = "Play Time: ${hours}h  |  Fav: $version",
+    color = androidx.compose.ui.graphics.Color.White
+)
+
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(40.dp),
