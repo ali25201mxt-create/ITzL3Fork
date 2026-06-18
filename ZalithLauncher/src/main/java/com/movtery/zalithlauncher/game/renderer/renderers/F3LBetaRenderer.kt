@@ -12,7 +12,7 @@ object F3LBetaRenderer : RendererInterface {
 
     override fun getMaxMCVersion(): String = "1.26"
 
-    override fun getRendererEnv(): Lazy<Map<String, String>> = lazy { emptyMap() }
+    override fun getRendererEnv(): Lazy<Map<String, String>> = lazy { mapOf("MESA_GL_VERSION_OVERRIDE" to "4.6", "MESA_GLSL_VERSION_OVERRIDE" to "460") }
 
     override fun getDlopenLibrary(): Lazy<List<String>> = lazy { emptyList() }
 
