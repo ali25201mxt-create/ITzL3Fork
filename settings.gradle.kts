@@ -24,7 +24,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ZalithLauncher"
+rootProject.name = "ITz3lFORK"
 include(":ZalithLauncher")
 include(":LWJGL")
 include(":LayerController")
